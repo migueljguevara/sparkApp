@@ -6,7 +6,8 @@ object SparkSQLExample {
 	val sc = new SparkContext(conf)
 	val sqlContext = new org.apache.spark.sql.SQLContext(sc)
     import sqlContext.implicits._
-    val df = sqlContext.read.json("gs://midepo/datos/dataset.json")
+    val jsonRDD = sc.wholeTextFiles("gs://midepo/datos/dataset.json").map(x => x._2)
+    val df = sqlContext.read.json(jsonRDD)
 	df.show()    
   }
  }

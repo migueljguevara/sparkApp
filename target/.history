@@ -5,3 +5,5 @@ help eclipse
 help alias
 help alias eclipse
 exit
+plugins
+exit

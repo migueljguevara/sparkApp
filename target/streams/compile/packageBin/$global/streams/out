@@ -1,5 +1,7 @@
-[0m[[0minfo[0m] [0mPackaging C:\Users\miguel\Documents\spark\app\sparkApp\target\scala-2.11\app1_2.11-1.0.jar ...[0m
+[0m[[0minfo[0m] [0mPackaging C:\Users\miguel\Documents\spark\app\sparkApp\target\scala-2.11\lectorjson_2.11-1.0.jar ...[0m
 [0m[[0mdebug[0m] [0mInput file mappings:[0m
+[0m[[0mdebug[0m] [0m	SparkSQLExample$$anonfun$1.class[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\miguel\Documents\spark\app\sparkApp\target\scala-2.11\classes\SparkSQLExample$$anonfun$1.class[0m
 [0m[[0mdebug[0m] [0m	SparkSQLExample$.class[0m
 [0m[[0mdebug[0m] [0m	  C:\Users\miguel\Documents\spark\app\sparkApp\target\scala-2.11\classes\SparkSQLExample$.class[0m
 [0m[[0mdebug[0m] [0m	SparkSQLExample.class[0m
