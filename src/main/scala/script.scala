@@ -9,7 +9,7 @@ object SparkSQLExample {
     //Nuevo
     val csvFile = sqlContext.read.format("csv").option("header", "true").option("inferSchema", "true").load("gs://midepo/datos/dataset.csv")
     csvFile.registerTempTable("clima")
-    val distinctCountries = sqlContext.sql("select distinct HORA from clima")
+    val distinctCountries = sqlContext.sql("select * from clima where TEMPERATURA_AMBIENTE = (select max(TEMPERATURA_AMBIENTE) from clima)")
     distinctCountries.collect.foreach(println)
 
     //val jsonRDD = sc.wholeTextFiles("gs://midepo/datos/dataset.json").map(x => x._2)
